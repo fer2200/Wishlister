@@ -5,4 +5,4 @@
  * @author ferna
  *
  */
-package com.jaya.config;
+package com.jaya.controller;

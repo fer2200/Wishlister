@@ -18,3 +18,73 @@
 }
   
   
+
+
+
+
+  
+#divCheckingsContainer {
+	
+	display: table;
+	border-collapse: separate;
+	border-spacing: 20px;
+}
+
+#divCheckingsRow {
+	display: table-row;
+}
+
+  
+#divCheckingIDNo1 {
+    left: 5px;
+    padding: 10px;  
+    border: 2px solid #80bfff;
+    height: 200px;
+    width: 200px;
+    display: table-cell;
+    background-color: #ccffff;    
+}
+
+#divCheckingIDNo2 {    
+    margin-left: 300px;
+    padding: 10px;
+    border: 2px solid #80bfff;
+    height: 200px;
+    width: 200px;
+    display: table-cell;
+    background-color: #ccffff;    
+}
+
+#divCheckingIDNo3 {
+    margin-left: 600px;
+    padding: 10px;
+    border: 2px solid #80bfff;
+    height: 200px;
+    width: 200px;
+    display: table-cell; 
+    background-color: #ccffff;
+    
+}  
+  
+  
+#divCheckingIDNo4 {
+    margin-left: 900px;
+    padding: 10px;
+    border: 2px solid #80bfff;
+    height: 200px;
+    width: 200px;
+    display: table-cell;    
+    background-color: #ccffff;
+} 
+
+ 
+#divCheckingPicture {
+	vertical-align: top;
+	height: 180px;
+}
+  
+  #divCheckingText {
+	vertical-align: bottom;	
+	text-align: right;
+}
+ 
