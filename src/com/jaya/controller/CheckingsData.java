@@ -52,6 +52,11 @@ public class CheckingsData {
         				String friendLastName = venues.getJSONObject(i).getJSONObject("user").getString("lastName");        				
         				checkings.setFriendFullName(friendFirstName + " " + friendLastName);    		
         			}
+        			if (venues.getJSONObject(i).getJSONObject("user").getJSONObject("photo").has("prefix")) {
+        				String friendPhotoURL = venues.getJSONObject(i).getJSONObject("user").getJSONObject("photo").getString("prefix");
+        				friendPhotoURL += "100x100" + venues.getJSONObject(i).getJSONObject("user").getJSONObject("photo").getString("suffix");
+        				checkings.setFriendPhotoURL(friendPhotoURL);
+        			}
         			 	
         			this.allFriendsCheckings.add(checkings);      
                 }

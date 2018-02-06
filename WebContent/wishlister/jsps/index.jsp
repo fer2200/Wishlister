@@ -16,7 +16,7 @@
 <form action="${pageContext.request.contextPath}/venuesListing" method="get"> 
 <div class="container">
 <div class="button-wrapper">
-      <input id="loginbutton" type="submit" value="Login with Foursquare"/>
+      <input class="addButton" id="loginbutton" type="submit" value="Login with Foursquare"/>
 </div>
 </div>      
 </form>

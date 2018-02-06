@@ -11,6 +11,15 @@ public class Checkings {
 
 	private String venueName = "";
 	private String friendFullName = "";
+	private String friendPhotoURL = "";
+
+	public String getFriendPhotoURL() {
+		return friendPhotoURL;
+	}
+
+	public void setFriendPhotoURL(String friendPhotoURL) {
+		this.friendPhotoURL = friendPhotoURL;
+	}
 
 	public void setVenueName(String venueName) {
 		this.venueName = venueName;		

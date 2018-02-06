@@ -11,7 +11,7 @@
 
 <c:set var="checkings" value='${requestScope["wishListerFriendsCheckings"]}' />
 
-<p>Recent</p>
+<h3 style="georgia; font-size: 23px;">Recent</h3>
 
 <div id="divCheckingsContainer">
 <div id="divCheckingsRow">
@@ -23,10 +23,12 @@
    <div id="divCheckingsRow" style="display: table-row;">
  </c:if>
  <div id="divCheckingIDNo${count}">
-     <div id="divCheckingPicture">     
-     <c:out value="${checking.friendFullName}"/>
+     <div id="divCheckingPicture">  
+     <img src="${checking.friendPhotoURL}" title="${checking.friendFullName}"/>   
+     <p><c:out value="${checking.friendFullName}"/></p>
      </div> 
  	<div id="divCheckingText">
+ 	<a href="#" class="addButton">Add</a>
      <c:out value="${checking.venueName}"/>
      </div>
  </div>
