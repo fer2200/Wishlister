@@ -12,7 +12,7 @@
   <!-- 
 <servlet>
   <servlet-name>venueslist</servlet-name>
-  <servlet-class>com.jaya.web.venuesListing</servlet-class>
+  <servlet-class>com.jy.web.venuesListing</servlet-class>
 </servlet>
 <servlet-mapping>
   <servlet-name>venueslist</servlet-name>

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jaya.bean;
+package com.jy.bean;
 
 /**
  * @author ferna
@@ -40,7 +40,8 @@ public class Checkings {
 	public String toString() {
 	    return  this.getClass().getSimpleName() + " -> " + 
 	            this.getVenueName() + " -> " + 
-	    		this.getFriendFullName();	  
+	    		this.getFriendFullName() + " -> " + 
+	            this.getFriendPhotoURL();	  
 	}
 	
 

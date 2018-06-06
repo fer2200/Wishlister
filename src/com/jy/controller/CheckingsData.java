@@ -1,4 +1,4 @@
-package com.jaya.controller;
+package com.jy.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,8 +16,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.jaya.bean.Checkings;
-import com.jaya.web.VenuesListing;
+import com.jy.bean.Checkings;
+import com.jy.web.VenuesListing;
 
 
 public class CheckingsData {

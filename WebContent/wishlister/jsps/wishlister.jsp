@@ -10,6 +10,22 @@
 <body>
 
 <c:set var="checkings" value='${requestScope["wishListerFriendsCheckings"]}' />
+<c:set var="myUser" value='${requestScope["myUser"]}' />
+
+<div id="divTop">
+<div id="divTop2">
+<div><h3 style="georgia; font-size: 23px;">Wishlist</h3></div>
+
+<div>
+<p><c:out value="${myUser.fullName}"/></p>
+<img src="${myUser.photoURL}" title="${myUser.fullName}"/>   
+</div>
+
+</div>
+</div>
+
+
+
 
 <h3 style="georgia; font-size: 23px;">Recent</h3>
 

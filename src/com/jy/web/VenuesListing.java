@@ -1,4 +1,4 @@
-package com.jaya.web;
+package com.jy.web;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,8 +15,10 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.jaya.controller.CheckingsData;
-import com.jaya.controller.DataHelper;
+import com.jy.bean.FoursquareUser;
+import com.jy.controller.CheckingsData;
+import com.jy.controller.DataHelper;
+import com.jy.controller.UserData;
 
 import fi.foyt.foursquare.api.FoursquareApi;
 import fi.foyt.foursquare.api.FoursquareApiException;
@@ -87,7 +89,8 @@ public class VenuesListing extends HttpServlet {
 	protected void getFourSquareData(HttpServletRequest request) {
 		CheckingsData checkingsData = new CheckingsData();		
 		request.setAttribute("wishListerFriendsCheckings", checkingsData.getFriendsCheckings(this.accessToken));
-		System.out.println(request.getAttribute("wishListerFriendsCheckings"));
+		UserData myUser = new UserData();
+		request.setAttribute("myUser", myUser.getMyUser(this.accessToken));
 	}
 
 	/**
@@ -111,15 +114,15 @@ public class VenuesListing extends HttpServlet {
 			
 	
 		} catch (FoursquareApiException e) {
-			// TODO: Error handling
-			System.out.print(e.getMessage());
+			if(logger.isDebugEnabled())
+					logger.debug(e);
 		}
 
 	}
 
 	public void authenticationRequest(HttpServletRequest request, HttpServletResponse response) {
 		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-		InputStream input = classLoader.getResourceAsStream("com/jaya//config/config.properties");
+		InputStream input = classLoader.getResourceAsStream("com/jy//config/config.properties");
 		Properties properties = new Properties();
 
 		try {

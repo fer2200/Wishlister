@@ -5,4 +5,4 @@
  * @author ferna
  *
  */
-package com.jaya.web;
+package com.jy.bean;

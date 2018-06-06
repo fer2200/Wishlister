@@ -9,7 +9,7 @@
 <title>Wishlister Foursquare</title>
 </head>
 <body>
-<fmt:bundle basename="com.jaya.config.config" >	
+<fmt:bundle basename="com.jy.config.config" >	
 <!-- 
 <form action="https://foursquare.com/oauth2/authenticate?client_id=<fmt:message key="client_id"></fmt:message>&response_type=code&redirect_uri=<fmt:message key="redirect_url"></fmt:message>" method="post">
  -->
